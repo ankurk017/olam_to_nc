@@ -1,0 +1,351 @@
+var_name,dummy,full_name,units,
+VMC           ,V3 ,V-NORMAL MOMENTUM, (kg m:S2:-2   s:S2:-1  )     ,& !p  1
+ WMC           ,W3 ,W MOMENTUM, (kg m:S2:-2   s:S2:-1  )            ,& !p  2
+ VMP           ,V3 ,V-NORMAL MOMENTUM, (kg m:S2:-2   s:S2:-1  )     ,& !p  3
+ VC            ,V3 ,V-NORMAL VELOCITY, (m s:S2:-1  )                ,& !p  4
+ WC            ,W3 ,W VELOCITY, (m s:S2:-1  )                       ,& !p  5
+ RHO           ,T3 ,AIR DENSITY, (kg m:S2:-3  )                     ,& !p  6
+ PRESS         ,T3 ,PRESSURE, (hPa)                                 ,& !   7
+ THIL          ,T3 ,ICE-LIQUID THETA, (K)                           ,& !p  8
+ THETA         ,T3 ,THETA, (K)                                      ,& !p  9
+ AIRTEMPK      ,T3 ,AIR TEMP, (K)                                   ,& !p 10
+ AIRTEMPC      ,T3 ,AIR TEMP, (C)                                   ,& !p 11
+ SH_W          ,T3 ,TOTAL WATER SPEC DENSITY, (g kg:S2:-1  )        ,& !p 12
+ SH_V          ,T3 ,WATER VAPOR SPEC DENSITY, (g kg:S2:-1  )        ,& !p 13
+ SH_C          ,T3 ,CLOUDWATER SPEC DENSITY, (g kg:S2:-1  )         ,& !p 14
+ SH_D          ,T3 ,DRIZZLE SPEC DENSITY, (g kg:S2:-1  )            ,& !p 15
+ SH_R          ,T3 ,RAIN SPEC DENSITY, (g kg:S2:-1  )               ,& !p 16
+ SH_P          ,T3 ,PRISTINE ICE SPEC DENSITY, (g kg:S2:-1  )       ,& !p 17
+ SH_S          ,T3 ,SNOW SPEC DENSITY, (g kg:S2:-1  )               ,& !p 18
+ SH_A          ,T3 ,AGGREGATES SPEC DENSITY, (g kg:S2:-1  )         ,& !p 19
+ SH_G          ,T3 ,GRAUPEL SPEC DENSITY, (g kg:S2:-1  )            ,& !p 20
+ SH_H          ,T3 ,HAIL SPEC DENSITY, (g kg:S2:-1  )               ,& !p 21
+ SH_CP         ,T3 ,CLOUD + PRIST ICE SPEC DENSITY, (g kg:S2:-1  )  ,& !p 22
+ SH_TOTCOND    ,T3 ,CONDENSATE SPEC DENSITY, (g kg:S2:-1  )         ,& !p 23
+ CON_C         ,T3 ,CLOUD DROPLET NUMBER CONCEN, (# mg:S2:-1  )     ,& !p 24
+ CON_D         ,T3 ,DRIZZLE NUMBER CONCEN, (# mg:S2:-1  )           ,& !p 25
+ CON_R         ,T3 ,RAIN NUMBER CONCEN, (# kg:S2:-1  )              ,& !p 26
+ CON_P         ,T3 ,PRISTINE ICE NUMBER CONCEN, (# kg:S2:-1  )      ,& !p 27
+ CON_S         ,T3 ,SNOW NUMBER CONCEN, (# kg:S2:-1  )              ,& !p 28
+ CON_A         ,T3 ,AGGREGATES NUMBER CONCEN, (# kg:S2:-1  )        ,& !p 29
+ CON_G         ,T3 ,GRAUPEL NUMBER CONCEN, (# kg:S2:-1  )           ,& !p 30
+ CON_H         ,T3 ,HAIL NUMBER CONCEN, (# kg:S2:-1  )              ,& !p 31
+ CON_CCN       ,T3 ,CCN NUMBER CONCEN, (# mg:S2:-1  )               ,& !p 32
+ CON_GCCN      ,T3 ,GCCN NUMBER CONCEN, (# mg:S2:-1  )              ,& !p 33
+ CON_IFN       ,T3 ,IFN NUMBER CONCEN, (# kg:S2:-1  )               , !p 34
+ HKM           ,T3 ,HORIZ TURB MOMENTUM K, (N s m:S2:-2  )          ,& !p 35
+ FTHRD         ,T3 ,RADIATIVE THETA TENDENCY, (K s:S2:-1  )         ,& !p 36
+ SPEEDW        ,T3 ,WIND SPEED AT W, (m s:S2:-1  )                  ,& !p 37
+ AZIMW         ,T3 ,WIND AZIMUTH AT W, (deg)                        ,& !p 38
+ ZONAL_WINDW   ,T3 ,ZONAL WIND AT W, (m s:S2:-1  )                  ,& !p 39
+ MERID_WINDW   ,T3 ,MERIDIONAL WIND AT W, (m s:S2:-1  )             ,& !p 40
+ RVORTZM       ,P3 ,REL VERT VORTICITY AT M, (s:S2:-1  )            ,& !p 41
+ TVORTZM       ,P3 ,TOT VERT VORTICITY AT M, (s:S2:-1  )            ,& !p 42
+ RVORTZM_P     ,P3 ,REL VERT VORTICITY PERT AT M, (s:S2:-1  )       ,& !p 43
+ DIVERG        ,T3 ,HORIZONTAL DIVERGENCE, (s:S2:-1  )              ,& !p 44
+ VMASSFLUX     ,V3 ,GRID CELL V-FACE MASS FLUX, (kg s:S2:-1  )      ,& !  45
+ VC_P          ,V3 ,NORMAL WIND PERT AT V, (m s:S2:-1  )            ,& !p 46
+ PRESS_P       ,T3 ,PRESSURE PERT, (hPa)                            ,& !  47
+ RHO_P         ,T3 ,DENSITY PERT, (kg m:S2:-3  )                    ,& !  48
+ THETA_P       ,T3 ,THETA PERT, (K)                                 ,& !  49
+ AIRTEMPK_P    ,T3 ,AIR TEMP PERT, (K)                              ,& !p 50
+ VMT           ,V3 ,V-NORM MOMENTUM TEND, (kg m:S2:-2   s:S2:-2  )  ,& !  51
+ WMT           ,W3 ,W MOMENTUM TEND, (kg m:S2:-2   s:S2:-2  )       ,& !  52
+ ADDSC         ,T3 ,ADDED SCALAR AMOUNT PER KG AIR,                 ,& !p 53
+ ADDSCP        ,T3 ,SCALAR PERTURBATION, ( )                        ,& !  54
+ ZPLEV         ,T3 ,HEIGHT OF CONST P SFC, (m)                      ,& !p 55
+ QWCON         ,T3 ,CUPARM CONDENSATE SPEC DENSITY, (g kg:S2:-1  )  , !p 56
+ RSHORT_TOP    ,T2 ,TOP DOWN SHORTWV FLX, (W m:S2:-2  )             ,& !  62
+ RSHORTUP_TOP  ,T2 ,TOP UP SHORTWV FLX, (W m:S2:-2  )               ,& !  63
+ RLONGUP_TOP   ,T2 ,TOP UP LONGWV FLX, (W m:S2:-2  )                ,& !  64
+ RSHORT        ,T2 ,SFC DOWN SHORTWV FLX, (W m:S2:-2  )             ,& !  65
+ RSHORTUP      ,T2 ,SFC UP SHORTWV FLX, (W m:S2:-2  )               ,& !  66
+ RLONG         ,T2 ,SFC DOWN LONGWV FLX, (W m:S2:-2  )              ,& !  67
+ RLONGUP       ,T2 ,SFC UP LONGWV FLX, (W m:S2:-2  )                ,& !  68
+ ALBEDT        ,T2 ,NET GRID COLUMN SFC ALBEDO, ( )                 ,& !  69
+ VKM_SFC       ,T2 ,SFC TURB K FOR MOMENTUM, (N s m:S2:-2  )        ,& !  70
+ USTAR         ,T2 ,SFC FRICTION VELOCITY, (m s:S2:-1  )            ,& !  71
+ SENSFLUX      ,T2 ,ATM SFC SENSIBLE HEAT FLUX, (W m:S2:-2  )       ,& !  72
+ VAPFLUX       ,T2 ,ATM SFC VAPOR FLUX, (kg m:S2:-2   s:S2:-1  )    ,& !  73
+ LATFLUX       ,T2 ,ATM SFC LATENT HEAT FLUX, (W m:S2:-2  )         ,& !  74
+ PCPRD         ,T2 ,DRIZZLE PRECIP RATE, (kg m:S2:-2   h:S2:-1  )   ,& !  75
+ PCPRR         ,T2 ,RAIN PRECIP RATE, (kg m:S2:-2   h:S2:-1  )      ,& !  76
+ PCPRP         ,T2 ,PRIST ICE PCP RATE, (kg m:S2:-2   h:S2:-1  )    ,& !  77
+ PCPRS         ,T2 ,SNOW PCP RATE, (kg m:S2:-2   h:S2:-1  )         ,& !  78
+ PCPRA         ,T2 ,AGGREGATES PCP RATE, (kg m:S2:-2   h:S2:-1  )   ,& !  79
+ PCPRG         ,T2 ,GRAUPEL PCP RATE, (kg m:S2:-2   h:S2:-1  )      ,& !  80
+ PCPRH         ,T2 ,HAIL PCP RATE, (kg m:S2:-2   h:S2:-1  )         ,& !  81
+ PCPRMIC       ,T2 ,MICROPHYS PCP RATE, (kg m:S2:-2   h:S2:-1  )    ,& !  82
+ PCPRCON       ,T2 ,CONV PCP RATE, (kg m:S2:-2   h:S2:-1  )         ,& !  83
+ PCPRBOTH      ,T2 ,MICRO + CONV PCP RATE, (kg m:S2:-2   h:S2:-1  ) ,& !  84
+ ACCPD         ,T2 ,ACCUM DRIZZLE, (kg m:S2:-2  )                   ,& !  85
+ ACCPR         ,T2 ,ACCUM RAIN, (kg m:S2:-2  )                      ,& !  86
+ ACCPP         ,T2 ,ACCUM PRIST ICE, (kg m:S2:-2  )                 ,& !  87
+ ACCPS         ,T2 ,ACCUM SNOW, (kg m:S2:-2  )                      ,& !  88
+ ACCPA         ,T2 ,ACCUM AGGREGATES, (kg m:S2:-2  )                ,& !  89
+ ACCPG         ,T2 ,ACCUM GRAUPEL, (kg m:S2:-2  )                   ,& !  90
+ ACCPH         ,T2 ,ACCUM HAIL, (kg m:S2:-2  )                      ,& !  91
+ ACCPMIC       ,T2 ,ACCUM MICPHYS PCP, (kg m:S2:-2  )               ,& !  92
+ ACCPCON       ,T2 ,ACCUM CONV PCP, (kg m:S2:-2  )                  ,& !  93
+ ACCPBOTH      ,T2 ,ACCUM MICPHYS + CONV PCP, (kg m:S2:-2  )        ,& !  94
+ WSTAR         ,T2 ,PBL CONVECTIVE VELOCITY, (m s:S2:-1  )          , !  95
+ ZONAL_WINDW_DIF2 ,T3 ,ATM ZONAL VELOCITY DIF2, (m s:S2:-1  )       ,& ! 101
+ MERID_WINDW_DIF2 ,T3 ,ATM MERID VELOCITY DIF2, (m s:S2:-1  )       ,& ! 102
+ WC_DIF2          ,T3 ,ATM VERT VELOCITY DIF2, (m s:S2:-1  )        ,& ! 103
+ PRESS_DIF2       ,T3 ,ATM PRESSURE DIF2, (hPa)                     ,& ! 104
+ AIRTEMPK_DIF2    ,T3 ,ATM TEMP DIF2, (K)                           ,& ! 105
+ SH_V_DIF2        ,T3 ,ATM VAP SPECIFIC DENSITY DIF2, (g kg:S2:-1  ),& ! 106
+ PCPMIC_DIF2      ,T2 ,MICPHYS PRECIP DIFF2, (mm/day)               ,& ! 107
+ PCPCON_DIF2      ,T2 ,CONV PRECIP DIFF2, (mm/day)                  ,& ! 108
+ PCPBOTH_DIF2     ,T2 ,MICPHYS + CONV PRECIP DIFF2, (mm/day)        ,& ! 109
+ RSHORT_DIF2      ,T2 ,SFC DOWN SHORTWV FLX DIF2, (W m:S2:-2  )     ,& ! 110
+ RSHORTUP_DIF2    ,T2 ,SFC UP SHORTWV FLX DIF2, (W m:S2:-2  )       ,& ! 111
+ RLONG_DIF2       ,T2 ,SFC DOWN LONGWV FLX DIF2, (W m:S2:-2  )      ,& ! 112
+ RLONGUP_DIF2     ,T2 ,SFC UP LONGWV FLX DIF2, (W m:S2:-2  )        ,& ! 113
+ RSHORT_TOP_DIF2  ,T2 ,TOP DOWN SHORTWV FLX DIF2, (W m:S2:-2  )     ,& ! 114
+ RSHORTUP_TOP_DIF2,T2 ,TOP UP SHORTWV FLX DIF2, (W m:S2:-2  )       ,& ! 115
+ RLONGUP_TOP_DIF2 ,T2 ,TOP UP LONGWV FLX DIF2, (W m:S2:-2  )        ,& ! 116
+ SENSFLUX_DIF2    ,T2 ,ATM SFC SENS HEAT FLUX DIF2, (W m:S2:-2  )   ,& ! 117
+ LATFLUX_DIF2     ,T2 ,ATM SFC LAT HEAT FLUX DIF2, (W m:S2:-2  )    ,& ! 118
+ VAPFLUX_DIF2     ,T2 ,ATM SFC VAP FLUX DIF2, (kg m:S2:-2   s:S2:-1  ) ,& ! 119
+ RSHORT_CLR_DIF2      ,T2 ,SFC DOWN SHORTWV FLX CLR DIF2, (W m:S2:-2  ),& ! 120
+ RSHORTUP_CLR_DIF2    ,T2 ,SFC UP SHORTWV FLX CLR DIF2, (W m:S2:-2  )  ,& ! 121
+ RLONG_CLR_DIF2       ,T2 ,SFC DOWN LONGWV FLX CLR DIF2, (W m:S2:-2  ) ,& ! 122
+ RLONGUP_CLR_DIF2     ,T2 ,SFC UP LONGWV FLX CLR DIF2, (W m:S2:-2  )   ,& ! 123
+ RSHORT_TOP_CLR_DIF2  ,T2 ,TOP DOWN SHORTWV FLX CLR DIF2, (W m:S2:-2  ),& ! 124
+ RSHORTUP_TOP_CLR_DIF2,T2 ,TOP UP SHORTWV FLX CLR DIF2, (W m:S2:-2  )  ,& ! 125
+ RLONGUP_TOP_CLR_DIF2 ,T2 ,TOP UP LONGWV FLX CLR DIF2, (W m:S2:-2  )   ,& ! 126
+ PCPMIC_DIF4    ,T2 ,MICPHYS PRECIP DIFF4, (mm/day)                  ,& ! 127
+ PCPCON_DIF4    ,T2 ,CONV PRECIP DIFF4, (mm/day)                     ,& ! 128
+ PCPBOTH_DIF4   ,T2 ,MICPHYS + CONV PRECIP DIFF4, (mm/day)           ,& ! 129
+ PCPMIC_REL4    ,T2 ,MICPHYS PRECIP RELATIVE DIFF4,                  ,& ! 130
+ PCPCON_REL4    ,T2 ,CONV PRECIP RELATIVE DIFF4,                     ,& ! 131
+ PCPBOTH_REL4   ,T2 ,MICPHYS + CONV PRECIP RELATIVE DIFF4,           , ! 132
+ SOIL_TEXT     ,L3G,SOIL TEXTURAL CLASS, ( )                        ,& ! 151
+ SOIL_ENERGY   ,L3G,SOIL ENERGY, (J cm:S2:-3  )                     ,& ! 152
+ SOIL_TEMPK    ,L3G,SOIL TEMP, (K)                                  ,& ! 153
+ SOIL_FRACLIQ  ,L3G,LIQUID FRACTION OF SOIL WATER, ( )              ,& ! 154
+ SOIL_WATER    ,L3G,SOIL WATER CONTENT, ( )                         ,& ! 155
+ SFWAT_MASS    ,L3S,SFCWATER MASS, (kg m:S2:-2  )                   ,& ! 156
+ SFWAT_ENERGY  ,L3S,SFCWATER ENERGY, (J g:S2:-1  )                  ,& ! 157
+ SFWAT_TEMPK   ,L3S,SFCWATER TEMP, (K)                              ,& ! 158
+ SFWAT_FRACLIQ ,L3S,SFCWATER LIQUID FRACTION, ( )                   ,& ! 159
+ SFWAT_DEPTH   ,L3S,SFCWATER DEPTH, (m)                             ,& ! 160
+ NLEV_SFWAT       ,L2 ,NUMBER OF SFCWATER LAYERS, ( )                ,& ! 161
+ VEG_NDVIC        ,L2 ,VEGETATION NDVI, ( )                          ,& ! 162
+ VEG_TEMPC        ,L2 ,VEGETATION TEMP, (C)                          ,& ! 163
+ VEG_TEMPK        ,L2 ,VEGETATION TEMP, (K)                          ,& ! 164
+ VEG_WATER        ,L2 ,VEGETATION SFC WATER , (kg m:S2:-2  )         ,& ! 165
+ STOM_RESIST      ,L2 ,STOMATAL RESISTANCE, (s m:S2:-1  )            ,& ! 166
+ SFCWATER_TOT     ,L2 ,TOTAL SFCWATER MASS, (kg m:S2:-2  )           ,& ! 167
+ SFCWATER_TOP_TEMP,L2 ,SFCWATER TOPLAYER TEMP, (K)                   ,& ! 168
+ SOIL_TOP_TEMP    ,L2 ,SOIL TOPLAYER TEMP, (K)                       ,& ! 169
+ GROUND_SHV       ,L2 ,EQUIL VAP SPEC DENSITY OF SOIL, (g kg:S2:-1  ),& ! 170
+ SOIL_DEPTH       ,L2 ,SOIL DEPTH, (m)                               ,& ! 171
+ SOIL_WATER_TOT   ,L2 ,TOTAL SOIL WATER, (m)                         ,& ! 172
+ HEAD0            ,L2 ,HEAD0, (m)                                    ,& ! 173
+ L_WXFER1_DIF2    ,L2 ,L SOIL BOTTOM WATER FLUX DIF2, (mm/day)       ,& ! 174
+ AL_SFCWATER_TOT  ,T2 ,AL TOTAL SFCWATER MASS, (kg m:S2:-2  )        ,& ! 175
+ AL_SOIL_WATER_TOT,T2 ,AL TOTAL SOIL WATER, (m)                      ,& ! 176
+ AL_WXFER1_DIF2   ,T2 ,AL SOIL BOTTOM WATER FLUX DIF2, (mm/day)      ,& ! 177
+ SEATP         ,S2 ,SEA SFC TEMP (PAST DATA), (K)                    ,& ! 178
+ SEATF         ,S2 ,SEA SFC TEMP (FUTURE DATA), (K)                  ,& ! 179
+ SEATC         ,S2 ,SEA SFC TEMP (CURRENT), (K)                      ,& ! 180
+ SEAICEP       ,S2 ,SEAICE FRACTION (PAST DATA), ( )                 ,& ! 181
+ SEAICEF       ,S2 ,SEAICE FRACTION (FUTURE DATA), ( )               ,& ! 182
+ SEAICEC       ,S2 ,SEAICE FRACTION (CURRENT), ( )                    , ! 183
+ LEAF_CLASS       ,B2 ,LEAF CLASS, ( )                             ,& ! 201
+ LS_IW            ,B2 ,LS ATM IW INDEX,                            ,& ! 202
+ LS_KW            ,B2 ,LS ATM KW INDEX,                            ,& ! 203
+ LS_ARF_IW        ,B2 ,LS IW AREA FRACTION,                        ,& ! 204
+ LS_ARF_KW        ,B2 ,LS KW AREA FRACTION,                        ,& ! 205
+ LS_AREA          ,B2 ,LS CELL AREA, (m:S2:2  )                    ,& ! 206
+ LS_TOPW          ,B2 ,LS CELL TOPW, (m)                           ,& ! 207
+ LS_ROUGH         ,B2 ,LS NET ROUGHNESS HEIGHT, (m)                ,& ! 208
+ LS_VELS          ,B2 ,LS WIND SPEED, (m s:S2:-1  )                ,& ! 209
+ LS_AIRTEMPK      ,B2 ,LS ATM TEMP, (K)                            ,& ! 210
+ LS_AIRSHV        ,B2 ,LS ATM SHV, (g kg:S2:-1  )                  ,& ! 211
+ LS_CANTEMPK      ,B2 ,LS CANOPY AIR TEMP, (K)                     ,& ! 212
+ LS_CANSHV        ,B2 ,LS CANOPY VAPOR SPEC DENSITY, (g kg:S2:-1  ),& ! 213
+ LS_SKINTEMPK     ,B2 ,LS VEG_GROUND_SFCWATER_SEA_TEMP, (K)        ,& ! 214
+ LS_GSS_SSH       ,B2 ,LS SFC SAT VAP SPEC DENS, (g kg:S2:-1  )    ,& ! 215
+ LS_SENSFLUX      ,B2,LS SENS HEAT FLX, (W m:S2:-2  )              ,& ! 216
+ LS_LATFLUX       ,B2,LS LAT HEAT FLX, (W m:S2:-2  )               ,& ! 217
+ LS_VAPFLUX       ,B2,LS VAP FLX, (kg m:S2:-2   s:S2:-1  )         ,& ! 218
+ LS_RSHORT        ,B2,LS DOWN SW FLX, (W m:S2:-2  )                ,& ! 219
+ LS_RLONG         ,B2,LS DOWN LW FLX, (W m:S2:-2  )                ,& ! 220
+ LS_RLONGUP       ,B2,LS UP LW FLX, (W m:S2:-2  )                  ,& ! 221
+ LS_RLONG_ALBEDO  ,B2,LS NET SFC LW ALBEDO, ( )                    ,& ! 222
+ LS_ALBEDO_BEAM   ,B2,LS NET SFC BEAM ALBEDO, ( )                  ,& ! 223
+ LS_ALBEDO_DIFFUSE,B2,LS NET SFC DIFFUSE ALBEDO, ( )                , ! 224
+ LS_VELS_DIF2      ,B2 ,LS WIND SPEED DIF2, (m s:S2:-1  )           ,& ! 241
+ LS_AIRTEMPK_DIF2  ,B2 ,LS ATM TEMP DIF2, (K)                       ,& ! 242
+ LS_AIRSHV_DIF2    ,B2 ,LS ATM SHV DIF2, (g kg:S2:-1  )             ,& ! 243
+ LS_CANTEMPK_DIF2  ,B2 ,LS CANOPY AIR TEMP DIF2, (K)                ,& ! 244
+ LS_CANSHV_DIF2    ,B2 ,LS CANOPY VAP SPEC DENS DIF2, (g kg:S2:-1  ),& ! 245
+ LS_SKINTEMPK_DIF2 ,B2 ,LS VEG_GROUND_SFCWATER_SEA TEMP DIF2, (K)   ,& ! 246
+ LS_SENSFLUX_DIF2  ,B2 ,LS SENS HEAT FLUX DIF2, (W m:S2:-2  )       ,& ! 247
+ LS_LATFLUX_DIF2   ,B2 ,LS LAT HEAT FLUX DIF2, (W m:S2:-2  )        ,& ! 248
+ LS_VAPFLUX_DIF2   ,B2 ,LS VAP FLUX DIF2, (kg m:S2:-2   s:S2:-1  )   , ! 249
+ ALS_VELS         ,T2 ,ALS WIND SPEED, (m s:S2:-1  )                ,& ! 261
+ ALS_AIRTEMPK     ,T2 ,ALS ATM TEMP, (K)                            ,& ! 262
+ ALS_AIRSHV       ,T2 ,ALS ATM SHV, (g kg:S2:-1  )                  ,& ! 263
+ ALS_CANTEMPK     ,T2 ,ALS CANOPY AIR TEMP, (K)                     ,& ! 264
+ ALS_CANSHV       ,T2 ,ALS CANOPY VAP SPEC DENS, (g kg:S2:-1  )     ,& ! 265
+ ALS_SKINTEMPK    ,T2 ,ALS VEG_GROUND_SFCWATER_SEA TEMP, (K)        ,& ! 266
+ ALS_SENSFLUX     ,T2 ,ALS SENS HEAT FLUX, (W m:S2:-2  )            ,& ! 267
+ ALS_LATFLUX      ,T2 ,ALS LAT HEAT FLUX, (W m:S2:-2  )             ,& ! 268
+ ALS_VAPFLUX      ,T2 ,ALS VAP FLUX, (kg m:S2:-2   s:S2:-1  )        , ! 269
+ ALS_VELS_DIF2     ,T2 ,ALS WIND SPEED DIF2, (m s:S2:-1  )           ,& ! 281
+ ALS_AIRTEMPK_DIF2 ,T2 ,ALS ATM TEMP DIF2, (K)                       ,& ! 282
+ ALS_AIRSHV_DIF2   ,T2 ,ALS ATM SHV DIF2, (g kg:S2:-1  )             ,& ! 283
+ ALS_CANTEMPK_DIF2 ,T2 ,ALS CANOPY AIR TEMP DIF2, (K)                ,& ! 284
+ ALS_CANSHV_DIF2   ,T2 ,ALS CANOPY VAP SPEC DENS DIF2, (g kg:S2:-1  ),& ! 285
+ ALS_SKINTEMPK_DIF2,T2 ,ALS VEG_GROUND_SFCWATER_SEA TEMP DIF2, (K)   ,& ! 286
+ ALS_SENSFLUX_DIF2 ,T2 ,ALS SENS HEAT FLUX DIF2, (W m:S2:-2  )       ,& ! 287
+ ALS_LATFLUX_DIF2  ,T2 ,ALS LAT HEAT FLUX DIF2, (W m:S2:-2  )        ,& ! 288
+ ALS_VAPFLUX_DIF2  ,T2 ,ALS VAP FLUX DIF2, (kg m:S2:-2   s:S2:-1  )   , ! 289
+ ALS_AIRTEMPK_DIF4 ,T2 ,ALS ATM TEMP DIF4, (K)                       ,& ! 290
+ ALS_CANTEMPK_DIF4 ,T2 ,ALS CANOPY AIR TEMP DIF4, (K)                ,& ! 291
+ ALS_SKINTEMPK_DIF4,T2 ,ALS VEG_GROUND_SFCWATER_SEA TEMP DIF4, (K)    , ! 292
+ ARV           ,V3 ,AREA OF GRID CELL V-FACE, (m:S2:2  )            ,& ! 301
+ ARW           ,W3 ,AREA OF GRID CELL W-FACE, (m:S2:2  )            ,& ! 302
+ VOLT          ,T3 ,GRID T-CELL VOLUME, (m:S2:3  )                   , ! 303
+ TOPM          ,M2 ,TOPOGRAPHY HEIGHT, (m)                          ,& ! 311
+ TOPW          ,W2 ,TOPOGRAPHY HEIGHT AT W, (m)                     ,& ! 312
+ GLATM         ,M2 ,LATITUDE AT M, (deg)                            ,& ! 313
+ GLONM         ,M2 ,LONGITUDE AT M, (deg)                           ,& ! 314
+ GLATV         ,V2 ,LATITUDE AT V, (deg)                            ,& ! 315
+ GLONV         ,V2 ,LONGITUDE AT V, (deg)                           ,& ! 316
+ GLATW         ,T2 ,LATITUDE, (deg)                                 ,& ! 317
+ GLONW         ,T2 ,LONGITUDE, (deg)                                ,& ! 318
+ LPM           ,M2 ,LOWEST PREDICTED M LEVEL, ( )                   ,& ! 319
+ LPV           ,V2 ,LOWEST PREDICTED V LEVEL, ( )                   ,& ! 320
+ LCV           ,V2 ,LOWEST ACTIVE V CONTROL VOL, ( )                ,& ! 321
+ LPW           ,W2 ,LOWEST PREDICTED W LEVEL, ( )                   ,& ! 322
+ LSW           ,W2 ,NUMBER OF SFC W LEVELS, ( )                     ,& ! 323
+ XEM           ,M2 ,EARTH-X COORD OF M POINT, ( )                   ,& ! 324
+ YEM           ,M2 ,EARTH-Y COORD OF M POINT, ( )                   ,& ! 325
+ ZEM           ,M2 ,EARTH-Z COORD OF M POINT, ( )                   ,& ! 326
+ XEV           ,V2 ,EARTH-X COORD OF V POINT, ( )                   ,& ! 327
+ YEV           ,V2 ,EARTH-Y COORD OF V POINT, ( )                   ,& ! 328
+ ZEV           ,V2 ,EARTH-Z COORD OF V POINT, ( )                   ,& ! 329
+ XEW           ,W2 ,EARTH-X COORD OF W POINT, ( )                   ,& ! 330
+ YEW           ,W2 ,EARTH-Y COORD OF W POINT, ( )                   ,& ! 331
+ ZEW           ,W2 ,EARTH-Z COORD OF W POINT, ( )                   ,& ! 332
+ DNU           ,V2 ,DNU, (m)                                        ,& ! 333
+ DNV           ,V2 ,DNV, (m)                                        ,& ! 334
+ ARM0          ,W2 ,SFC AREA OF M CELL, (m:S2:2  )                  ,& ! 335
+ ARW0          ,W2 ,SFC AREA OF W CELL, (m:S2:2  )                   , ! 336
+ ITAB_M_NPOLY  ,M2 ,ITAB_M_NPOLY, ( )                               ,& ! 341
+ ITAB_M_IMGLOBE,M2 ,ITAB_M_IMGLOBE, ( )                             ,& ! 342
+ ITAB_M_MRLM   ,M2 ,ITAB_M_MRLM, ( )                                ,& ! 343
+ ITAB_M_MRLM_OR,M2 ,ITAB_M_MRLM_ORIG, ( )                           ,& ! 344
+ ITAB_M_MROW   ,M2 ,ITAB_M_MROW, ( )                                ,& ! 345
+ ITAB_M_NGR    ,M2 ,ITAB_M_NGR, ( )                                 ,& ! 346
+ ITAB_M_IV     ,M2 ,ITAB_M_IV, ( )                                  ,& ! 347
+ ITAB_M_IW     ,M2 ,ITAB_M_IW, ( )                                   , ! 348
+ ITAB_V_IVP    ,V2 ,ITAB_V_IVP, ( )                                 ,& ! 351
+ ITAB_V_IRANK  ,V2 ,ITAB_V_IRANK, ( )                               ,& ! 352
+ ITAB_V_IVGLOBE,V2 ,ITAB_V_IVGLOBE, ( )                             ,& ! 353
+ ITAB_V_MRLV   ,V2 ,ITAB_V_MRLV, ( )                                ,& ! 354
+ ITAB_V_IM     ,V2 ,ITAB_V_IM, ( )                                  ,& ! 355
+ ITAB_V_IV     ,V2 ,ITAB_V_IV, ( )                                  ,& ! 356
+ ITAB_V_IW     ,V2 ,ITAB_V_IW, ( )                                  ,& ! 357
+ ITAB_V_FARW   ,V2 ,ITAB_V_FARW, ( )                                 , ! 358
+ ITAB_W_NPOLY  ,W2 ,ITAB_W_NPOLY, ( )                               ,& ! 361
+ ITAB_W_IWP    ,W2 ,ITAB_W_IWP, ( )                                 ,& ! 362
+ ITAB_W_IRANK  ,W2 ,ITAB_W_IRANK, ( )                               ,& ! 363
+ ITAB_W_IWGLOBE,W2 ,ITAB_W_IWGLOBE, ( )                             ,& ! 364
+ ITAB_W_MRLW   ,W2 ,ITAB_W_MRLW, ( )                                ,& ! 365
+ ITAB_W_MRLW_OR,W2 ,ITAB_W_MRLW_ORIG, ( )                           ,& ! 366
+ ITAB_W_NGR    ,W2 ,ITAB_W_NGR, ( )                                 ,& ! 367
+ ITAB_W_IM     ,W2 ,ITAB_W_IM, ( )                                  ,& ! 368
+ ITAB_W_IV     ,W2 ,ITAB_W_IV, ( )                                  ,& ! 369
+ ITAB_W_IW     ,W2 ,ITAB_W_IW, ( )                                  ,& ! 370
+ ITAB_W_DIRV   ,W2 ,ITAB_W_DIRV, ( )                                ,& ! 371
+ ITAB_W_FARM   ,W2 ,ITAB_W_FARM, ( )                                ,& ! 372
+ ITAB_W_FARV   ,W2 ,ITAB_W_FARV, ( )                                ,& ! 373
+ ITAB_W_IWNUD  ,W2 ,ITAB_W_IWNUD, ( )                               ,& ! 374
+ ITAB_W_FNUD   ,W2 ,ITAB_W_FNUD, ( )                                 , ! 375
+ PRESS_MAVG    ,T2,MONTH-AVG PRESSURE, (hPa)                        ,& ! 401
+ RHO_MAVG      ,T2,MONTH-AVG AIR DENSITY, (kg m:S2:-3  )            ,& ! 402
+ TEMPK_MAVG    ,T2,MONTH-AVG TEMPERATURE, (K)                       ,& ! 403
+ SH_V_MAVG     ,T2,MONTH-AVG VAPOR SPEC DENSITY, (g kg:S2:-1  )     ,& ! 404
+ SH_W_MAVG     ,T2,MONTH-AVG TOT WATER SPEC DENSITY, (g kg:S2:-1  ) ,& ! 405
+ WC_MAVG       ,T2,MONTH-AVG W VELOCITY, (m s:S2:-1  )              ,& ! 406
+ ZONAL_WINDW_MAVG ,T2,MONTH-AVG ZONAL WIND, (m s:S2:-1  )           ,& ! 407
+ MERID_WINDW_MAVG ,T2,MONTH-AVG MERID WIND, (m s:S2:-1  )           ,& ! 408
+ RSHORT_MAVG      ,T2,MONTH-AVG SFC DOWNWARD S_W FLX, (W m:S2:-2  ) ,& ! 409
+ RSHORT_TOP_MAVG  ,T2,MONTH-AVG TOP DOWNWARD S_W FLX, (W m:S2:-2  ) ,& ! 410
+ RSHORTUP_MAVG    ,T2,MONTH-AVG SFC UPWARD S_W FLX, (W m:S2:-2  )   ,& ! 411
+ RSHORTUP_TOP_MAVG,T2,MONTH-AVG TOP UPWARD S_W FLX, (W m:S2:-2  )   ,& ! 412
+ RLONG_MAVG       ,T2,MONTH-AVG SFC DOWNWARD L_W FLX, (W m:S2:-2  ) ,& ! 413
+ RLONGUP_MAVG     ,T2,MONTH-AVG SFC UPWARD L_W FLX, (W m:S2:-2  )   ,& ! 414
+ RLONGUP_TOP_MAVG ,T2,MONTH-AVG TOP UPWARD L_W FLX, (W m:S2:-2  )   ,& ! 415
+ LATFLUX_MAVG     ,T2,MONTH-AVG SFC LATENT HEAT FLX, (W m:S2:-2  )  ,& ! 416
+ SENSFLUX_MAVG    ,T2,MONTH-AVG SFC SENSIBLE HEAT FLX, (W m:S2:-2  ),& ! 417
+ WINDSPEED_MAVG   ,T2,MONTH-AVG SFC WIND SPEED, (m s:S2:-1  )       ,& ! 418
+ ACCPMIC_MTOT     ,T2,MONTH-ACCUM MICPHYS PRECIP, (kg m:S2:-2  )    ,& ! 419
+ ACCPCON_MTOT     ,T2,MONTH-ACCUM CUPARM PRECIP, (kg m:S2:-2  )     ,& ! 420
+ ACCPBOTH_MTOT    ,T2,MONTH-ACCUM MICPHYS + CONV PCP, (kg m:S2:-2  ),& ! 421
+ PRESS_DAVG       ,T2,DAY-AVG SFC PRESSURE, (hPa)                   ,& ! 422
+ ZONAL_WINDW_DAVG ,T2,DAY-AVG SFC ZONAL WIND, (m s:S2:-1  )         ,& ! 423
+ MERID_WINDW_DAVG ,T2,DAY-AVG SFC MERID WIND, (m s:S2:-1  )         ,& ! 424
+ RSHORT_DAVG      ,T2,DAY-AVG SFC DOWNWARD S_W FLX, (W m:S2:-2  )   ,& ! 425
+ TEMPK_DAVG       ,T2,DAY-AVG SFC TEMPERATURE, (K)                  ,& ! 426
+ TEMPK_DMIN       ,T2,DAY-MIN SFC TEMPERATURE, (K)                  ,& ! 427
+ TEMPK_DMAX       ,T2,DAY-MAX SFC TEMPERATURE, (K)                  ,& ! 428
+ ACCPMIC_DTOT     ,T2,DAY-ACCUM MICPHYS PRECIP, (kg m:S2:-2  )      ,& ! 429
+ ACCPCON_DTOT     ,T2,DAY-ACCUM CUPARM PRECIP, (kg m:S2:-2  )       ,& ! 430
+ ACCPBOTH_DTOT    ,T2,DAY-ACCUM MICPHYS + CONV PCP, (kg m:S2:-2  )  ,& ! 431
+ PRESS_UL_DAVG      ,T2,DAY-AVG UL PRESSURE, (hPa)                  ,& ! 432
+ ZONAL_WINDW_UL_DAVG,T2,DAY-AVG UL ZONAL WIND, (m s:S2:-1  )        ,& ! 433
+ MERID_WINDW_UL_DAVG,T2,DAY-AVG UL MERID WIND, (m s:S2:-1  )        ,& ! 434
+ CANTEMPK_DAVG    ,B2,DAY-AVG CANOPY TEMPERATURE, (K)               ,& ! 435
+ CANTEMPK_DMIN    ,B2,DAY-MIN CANOPY TEMPERATURE, (K)               ,& ! 436
+ CANTEMPK_DMAX    ,B2,DAY-MAX CANOPY TEMPERATURE, (K)               ,& ! 437
+ VEGTEMPK_DAVG    ,L2,DAY-AVG VEG TEMPERATURE, (K)                  ,& ! 438
+ VEGTEMPK_DMIN    ,L2,DAY-MIN VEG TEMPERATURE, (K)                  ,& ! 439
+ VEGTEMPK_DMAX    ,L2,DAY-MAX VEG TEMPERATURE, (K)                  ,& ! 440
+ SOILTEMPK_DAVG   ,L2,DAY-AVG SOIL TEMPERATURE, (K)                 ,& ! 441
+ SOILTEMPK_DMIN   ,L2,DAY-MIN SOIL TEMPERATURE, (K)                 ,& ! 442
+ SOILTEMPK_DMAX   ,L2,DAY-MAX SOIL TEMPERATURE, (K)                 ,& ! 443
+ LS_AIRTEMPK_DAVG ,B2,L_S DAY-AVG ATM TEMP, (K)                     ,& ! 444
+ LS_AIRTEMPK_DMIN ,B2,L_S DAY-MIN ATM TEMP, (K)                     ,& ! 445
+ LS_AIRTEMPK_DMAX ,B2,L_S DAY-MAX ATM TEMP, (K)                     ,& ! 446
+ LS_CANTEMPK_DAVG ,B2,L_S DAY-AVG CAN TEMP, (K)                     ,& ! 447
+ LS_CANTEMPK_DMIN ,B2,L_S DAY-MIN CAN TEMP, (K)                     ,& ! 448
+ LS_CANTEMPK_DMAX ,B2,L_S DAY-MAX CAN TEMP, (K)                     ,& ! 449
+ LS_SENSFLUX_DAVG ,B2,L_S DAY-AVG SENS HEAT FLUX, (W m:S2:-2  )     ,& ! 450
+ LS_LATFLUX_DAVG  ,B2,L_S DAY-AVG LAT HEAT FLUX, (W m:S2:-2  )      ,& ! 451
+ SENSFLUX_DAVG    ,T2,DAY-AVG SENS HEAT FLUX, (W m:S2:-2  )         ,& ! 452
+ LATFLUX_DAVG     ,T2,DAY-AVG LAT HEAT FLUX, (W m:S2:-2  )          ,& ! 453
+ PRESS_AVG24      ,T2,MONTH-AVG HOURLY PRESSURE, (hPa)               , ! 454
+ RHO_OBS       ,T3 ,NUDGING OBS AIR DENSITY, (kg m:S2:-3  )         ,& ! 471
+ THETA_OBS     ,T3 ,NUDGING OBS THETA, (K)                          ,& ! 472
+ SHW_OBS       ,T3 ,NUDGING OBS VAPOR SPEC DENSITY, (g kg:S2:-1  )  ,& ! 473
+ UZONAL_OBS    ,T3 ,NUDGING OBS ZONAL WIND, (m s:S2:-1  )           ,& ! 474
+ UMERID_OBS    ,T3 ,NUDGING OBS MERID WIND, (m s:S2:-1  )           ,& ! 475
+ RHO_SIM       ,T3 ,NUDGING SIM AIR DENSITY, (kg m:S2:-3  )         ,& ! 476
+ THETA_SIM     ,T3 ,NUDGING SIM THETA, (K)                          ,& ! 477
+ SHW_SIM       ,T3 ,NUDGING SIM VAPOR SPEC DENSITY, (g kg:S2:-1  )  ,& ! 478
+ UZONAL_SIM    ,T3 ,NUDGING SIM ZONAL WIND, (m s:S2:-1  )           ,& ! 479
+ UMERID_SIM    ,T3 ,NUDGING SIM MERID WIND, (m s:S2:-1  )           ,& ! 480
+ RHO_OBS_SIM   ,T3 ,NUDGING DIF AIR DENSITY, (kg m:S2:-3  )         ,& ! 481
+ THETA_OBS_SIM ,T3 ,NUDGING DIF THETA, (K)                          ,& ! 482
+ SHW_OBS_SIM   ,T3 ,NUDGING DIF VAPOR SPEC DENSITY, (g kg:S2:-1  )  ,& ! 483
+ UZONAL_OBS_SIM,T3 ,NUDGING DIF ZONAL WIND, (m s:S2:-1  )           ,& ! 484
+ UMERID_OBS_SIM,T3 ,NUDGING DIF MERID WIND, (m s:S2:-1  )           ,& ! 485
+ VXE           ,T3 ,EARTH CARTESIAN X WIND, (m s:S2:-1  )           ,& ! 486
+ VYE           ,T3 ,EARTH CARTESIAN Y WIND, (m s:S2:-1  )           ,& ! 487
+ VZE           ,T3 ,EARTH CARTESIAN Z WIND, (m s:S2:-1  )           ,& ! 488
+ PBLH          ,T2 ,PBL HEIGHT, (m)                                 ,& ! 489
+ HKH           ,T3 ,EDDY DIFFUSIVITY, (m:S2:2 s:S2:-1  )            ,& ! 490
+ SHW_HCONV     ,T2 ,TOTAL WATER HORIZ CONV, (kg m:S2:-2   s:S2:-1  ),& ! 491
+ SHV_HCONV     ,T2 ,WATER VAPOR HORIZ CONV, (kg m:S2:-2   s:S2:-1  ),& ! 492
+ CLDNUM        ,T2 ,CLOUD # CONCEN (GEOG), (# mg:S2:-1  )            , ! 493
+ VORTP         ,P3 ,VORTP, (s:S2:-1  )                              ,& ! 501
+ VORTN         ,N3 ,VORTN, (s:S2:-1  )                              ,& ! 502
+ RKE           ,T3 ,RKE, (s:S2:-1  )                                 , ! 503
+
